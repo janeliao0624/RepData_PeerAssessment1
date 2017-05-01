@@ -65,7 +65,7 @@ ggplot (intervalTable1,aes(x=Interval,y=Avg)) +
         ylab("The Average Number of Steps Taken")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-5-1.png)<!-- -->
+![plot of unnamed-chunk-5-1.png](instructions_fig/unnamed-chunk-5-1) <!-- -->
 
 Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
 
@@ -121,7 +121,7 @@ hist(sumTable$Steps, breaks=5, xlab="Steps", main = "Total Steps per Day", col="
 legend("topright", c("ALL Data", "Non-NA Data"), fill=c("black", "grey") )
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-10-1.png)<!-- -->
+![plot of unnamed-chunk-10-1.png](instructions_fig/unnamed-chunk-10-1.png) <!-- -->
 
 Calculate and report the mean and median of the total number of steps taken per day
 
@@ -164,6 +164,6 @@ xyplot(Avg~interval|DayCat, data=intervalTable2, type="l",  layout = c(1,2),
        ylab="Average Number of Steps", xlab="The 5-minute Interval")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-13-1.png)<!-- -->
+![plot of unnamed-chunk-13-1.png](instructions_fig/unnamed-chunk-13-1.png) <!-- -->
 
 The step activity trends are different based on the day type. This may be due to people having more time during weekend.
