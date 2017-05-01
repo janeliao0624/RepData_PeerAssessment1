@@ -30,6 +30,7 @@ Make a histogram of the total number of steps taken each day
 ```{r}
 hist(sumTable$Steps, breaks = 5, xlab="Steps", main = "Total steps per day")
 ```
+![plot of unnamed-chunk-3-1.png](instructions_fig/unnamed-chunk-3-1.png)<!-- -->
 
 Calculate and report the mean and median of the total number of steps taken per day
 
@@ -52,7 +53,7 @@ ggplot (intervalTable1,aes(x=Interval,y=Avg)) +
         ylab("The Average Number of Steps Taken")
 ```
 
-![plot of unnamed-chunk-3-1.png](instructions_fig/unnamed-chunk-3-1.png)<!-- -->
+![plot of unnamed-chunk-5-1.png](instructions_fig/unnamed-chunk-5-1.png)<!-- -->
 
 Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
 
@@ -94,6 +95,7 @@ hist(sumTable2$Steps, breaks=5, xlab="Steps", main = "Total Steps per Day", col=
 hist(sumTable$Steps, breaks=5, xlab="Steps", main = "Total Steps per Day", col="Grey", add=T)
 legend("topright", c("ALL Data", "Non-NA Data"), fill=c("black", "grey") )
 ```
+![plot of unnamed-chunk-10-1.png](instructions_fig/unnamed-chunk-10-1.png)<!-- -->
 
 Calculate and report the mean and median of the total number of steps taken per day
 
@@ -121,5 +123,6 @@ xyplot(Avg~interval|DayCat, data=intervalTable2, type="l",  layout = c(1,2),
        main="Average Steps per Interval Based on Day Type", 
        ylab="Average Number of Steps", xlab="The 5-minute Interval")
 ```
+![plot of unnamed-chunk-13-1.png](instructions_fig/unnamed-chunk-13-1.png)<!-- -->
 
 The step activity trends are different based on the day type. This may be due to people having more time during weekend.
