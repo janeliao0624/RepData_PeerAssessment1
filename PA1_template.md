@@ -29,7 +29,7 @@ Make a histogram of the total number of steps taken each day
 hist(sumTable$Steps, breaks = 5, xlab="Steps", main = "Total steps per day")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-3-1.png)<!-- -->
+![plot of unnamed-chunk-3-1.png](instructions_fig/unnamed-chunk-3-1.png)
 
 Calculate and report the mean and median of the total number of steps taken per day
 
