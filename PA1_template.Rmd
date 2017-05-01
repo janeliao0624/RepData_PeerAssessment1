@@ -9,7 +9,7 @@ output:
 
 ## Loading and preprocessing the data
 
-```{r echo = TRUE}
+```{r}
 setwd('C:/Users/Jane_Liao/Desktop/JL/Coursera/5. Reproducible research/W2/')
 activityraw <- read.csv("activity.csv")
 activity <- activityraw[!is.na(activityraw$steps),]
@@ -20,14 +20,14 @@ activity$day <- weekdays(as.Date(activity$date))
 
 Calculate the total number of steps taken per day
 
-```{r echo = TRUE}
+```{r}
 sumTable <- aggregate(activity$steps~activity$date, FUN = sum, )
 colnames(sumTable)<-c("Date","Steps")
 ```
 
 Make a histogram of the total number of steps taken each day
 
-```{r echo = TRUE}
+```{r}
 hist(sumTable$Steps, breaks = 5, xlab="Steps", main = "Total steps per day")
 ```
 
@@ -62,7 +62,7 @@ intervalTable1 [intervalTable1$Avg==max,1]
 ## Imputing missing values
 
 Calculate and report the total number of missing values in the dataset (i.e. the total number of rows with NAs)
-```{r how_many_missing,echo=TRUE}
+```{r}
 nrow(activityraw[is.na(activityraw$steps),])
 ```
 

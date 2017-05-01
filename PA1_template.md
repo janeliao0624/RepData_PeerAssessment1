@@ -121,7 +121,7 @@ hist(sumTable$Steps, breaks=5, xlab="Steps", main = "Total Steps per Day", col="
 legend("topright", c("ALL Data", "Non-NA Data"), fill=c("black", "grey") )
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-9-1.png)<!-- -->
+![](PA1_template_files/figure-html/unnamed-chunk-10-1.png)<!-- -->
 
 Calculate and report the mean and median of the total number of steps taken per day
 
@@ -164,6 +164,6 @@ xyplot(Avg~interval|DayCat, data=intervalTable2, type="l",  layout = c(1,2),
        ylab="Average Number of Steps", xlab="The 5-minute Interval")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-12-1.png)<!-- -->
+![](PA1_template_files/figure-html/unnamed-chunk-13-1.png)<!-- -->
 
 The step activity trends are different based on the day type. This may be due to people having more time during weekend.
