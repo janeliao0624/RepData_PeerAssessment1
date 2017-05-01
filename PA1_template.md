@@ -29,7 +29,7 @@ Make a histogram of the total number of steps taken each day
 hist(sumTable$Steps, breaks = 5, xlab="Steps", main = "Total steps per day")
 ```
 
-![plot of unnamed-chunk-3-1.png](instructions_fig/unnamed-chunk-3-1.png)
+![plot of unnamed-chunk-3-1.png](instructions_fig/unnamed-chunk-3-1.png)<!-- -->
 
 Calculate and report the mean and median of the total number of steps taken per day
 
@@ -65,7 +65,7 @@ ggplot (intervalTable1,aes(x=Interval,y=Avg)) +
         ylab("The Average Number of Steps Taken")
 ```
 
-![plot of unnamed-chunk-5-1.png](instructions_fig/unnamed-chunk-5-1) <!-- -->
+![plot of unnamed-chunk-5-1.png](instructions_fig/unnamed-chunk-5-1.png)<!-- -->
 
 Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
 
